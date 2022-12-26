@@ -9,7 +9,7 @@ export default function HeroSection() {
             <div className="flex flex-col text-center p-10 py-10 ">
                 <Image height="250" width="250" src={avatar} className="relative m-auto rounded-full" alt="any" objectFit="cover"></Image>
                 <h2 className="text-14xl py-2 text-cyan-200 float-right font-medium dark:text-cyan-800 md:text-6xl block">
-                    Hello, I`&apos;`m Austin Allen
+                    Hello, I&apos;m Austin Allen
                 </h2>
 
                 <h3 className="text-4xl py-2 dark:text-slate-700 md:text-2xl block">

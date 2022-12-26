@@ -18,15 +18,24 @@ function classNames(...classes: any) {
 export default function Example() {
 
   useEffect(() => {
-    let portNavItem = document.querySelector('a[href*="#port"]');
-    let contactNavItem = document.querySelector('a[href*="#contact"]');
+    let openNavBtn = document.querySelector('button[id*="headlessui-disclosure-button"]')
     let portfolioSect = document.querySelectorAll('section')[1]
     let contactSect = document.querySelector('div#contact')
-    portNavItem?.addEventListener('click', () => {
-      portfolioSect?.scrollIntoView({ behavior: 'smooth' })
-    })
-    contactNavItem?.addEventListener('click', () => {
-      contactSect?.scrollIntoView({ behavior: 'smooth' })
+    openNavBtn?.addEventListener('click', () => {
+      setTimeout(() => {
+        let portNavItemMobile = document.querySelectorAll('a[href*="#port"]')[1];
+        let contactNavItemMobile = document.querySelectorAll('a[href*="#contact"]')[1];
+        portNavItemMobile?.addEventListener('click', () => {
+          setTimeout(() => {
+            portfolioSect?.scrollIntoView({ behavior: 'smooth' })
+          }, 500)
+        })
+        contactNavItemMobile?.addEventListener('click', () => {
+          setTimeout(() => {
+            contactSect?.scrollIntoView({ behavior: 'smooth' })
+          }, 500)
+        })
+      }, 500)
     })
   })
 

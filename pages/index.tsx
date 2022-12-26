@@ -9,9 +9,7 @@ import Image from "next/image";
 import { Modal, Card, Button } from "react-bootstrap"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
-import Carousel from 'react-bootstrap/Carousel'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import aaudio_1 from '../public/aaudio-1.jpeg'
 import aaudio_2 from '../public/aaudio-2.jpg'
 import aaudio_3 from '../public/aaudio-3.jpg'
@@ -23,9 +21,7 @@ import schoolmusicsite_4 from '../public/virtualpiano-drumkit-4.png'
 import coffeeshop1 from '../public/coffeeshop1.jpg'
 import coffeeshop2 from '../public/coffeeshop2.jpg'
 import { useEffect } from 'react';
-import * as $ from 'jquery'
-import Form from 'customisable-contact-form'
-import { Heading, FirstName, LastName, Email, Message, SubmitButton } from 'customisable-contact-form'
+import * as $ from 'jquery';
 
 export default function Home() {
 
@@ -47,7 +43,7 @@ export default function Home() {
           <div className='bg-gray-800 flex flex-col space-x-2 items-center'>
 
             {/* COFFEE SHOP SITE */}
-            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Harry & Sally's Coffee Co.</h3>
+            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Harry & Sally`&apos;`s Coffee Co.</h3>
             <span className='text-yellow-50 text-sm font-extralight -mt-3 mb-4'>(click images to expand)</span>
             <div className="flex image-cards">
               <button className="left-img mb-10 rounded-md bg-yellow-50" data-bs-toggle="modal" data-bs-target="#coffeeshop1_modal">
@@ -367,11 +363,11 @@ export default function Home() {
         <div id='contact' className="block mt-2">
           <span className="block">Reach out <a href="mailto:austinrallen96@gmail.com">via email</a>, LinkedIn or Github!</span>
           <ul className="list-inline inline-flex">
-            <li><a target="_blank" href="https://github.com/otonomee"><i className="fa fa-github fa-fw bg-github-footer" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/otonomee"><i className="fa fa-github fa-fw bg-github-footer" aria-hidden="true"></i></a></li>
 
-            <li><a target="_blank" href="https://www.linkedin.com/in/austin-allen-a7129b116/"><i className="fa fa-linkedin fa-fw bg-linkedin-footer" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/austin-allen-a7129b116/"><i className="fa fa-linkedin fa-fw bg-linkedin-footer" aria-hidden="true"></i></a></li>
 
-            <li><a target="_blank" href="mailto:austinrallen96@gmail.com"><i className="fa fa-envelope-o fa-fw bg-envelope" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" href="mailto:austinrallen96@gmail.com"><i className="fa fa-envelope-o fa-fw bg-envelope" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>

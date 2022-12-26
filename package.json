@@ -15,7 +15,6 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "bootstrap": "^5.2.3",
-    "customisable-contact-form": "^1.0.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",

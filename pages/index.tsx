@@ -21,7 +21,6 @@ import schoolmusicsite_4 from '../public/virtualpiano-drumkit-4.png'
 import coffeeshop1 from '../public/coffeeshop1.jpg'
 import coffeeshop2 from '../public/coffeeshop2.jpg'
 import { useEffect } from 'react';
-import * as $ from 'jquery';
 
 export default function Home() {
 

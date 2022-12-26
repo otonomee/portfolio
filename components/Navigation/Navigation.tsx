@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
@@ -7,15 +7,29 @@ import avatar from '../../public/avatar.png'
 
 const navigation = [
   { name: 'About', href: '#', current: true },
-  { name: 'Portfolio', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false }
+  { name: 'Portfolio', ref: 'navItemRef', href: '#portfolio-section', id: 'portfolio-navitem', current: false },
+  { name: 'Contact', href: '#contactt', current: false }
 ]
 
-function classNames(...classes:any) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
+
+  useEffect(() => {
+    let portNavItem = document.querySelector('a[href*="#port"]');
+    let contactNavItem = document.querySelector('a[href*="#contact"]');
+    let portfolioSect = document.querySelectorAll('section')[1]
+    let contactSect = document.querySelector('div#contact')
+    portNavItem?.addEventListener('click', () => {
+      portfolioSect?.scrollIntoView({ behavior: 'smooth' })
+    })
+    contactNavItem?.addEventListener('click', () => {
+      contactSect?.scrollIntoView({ behavior: 'smooth' })
+    })
+  })
+
   return (
     <Disclosure as="nav" className="bg-white-100 border-b-black-900 border-b-2">
       {({ open }) => (
@@ -34,24 +48,24 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        {/* <Image height="50" width="50" src={avatar} className="relative m-auto rounded-full" alt="any" objectFit="cover"></Image> */}
-                    
-                    <span className="block h-8 w-auto lg:hidden text-black">Austin Allen</span>
-                  <span className="hidden h-8 w-auto lg:block text-black">Austin Allen</span>
+                {/* <Image height="50" width="50" src={avatar} className="relative m-auto rounded-full" alt="any" objectFit="cover"></Image> */}
+
+                <span className="ml-3 block h-8 w-auto lg:hidden text-black">Austin Allen Portfolio</span>
+                <span className="ml-3 hidden h-8 w-auto lg:block text-black">Austin Allen Portfolio</span>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img
                     className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src='../public/avatar.png'
                     alt="Your Company"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src='../public/avatar.png'
                     alt="Your Company"
                   /> */}
-                  
+
                 </div>
                 <div className="hidden sm:ml-6 sm:block sm:justify-end">
                   <div className="flex space-x-4">
@@ -60,7 +74,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-grey-700 border-b-4 border-b-blue-900' : 'text-gray-700 hover:border-b-4 hover:border-opacity-50 hover:border-b-blue-900',
+                          item.current ? 'text-grey-700 border-b-2 border-b-blue-900' : 'text-gray-700 hover:border-b-2 hover:border-opacity-50 hover:border-b-blue-900',
                           'px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -71,8 +85,8 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              
-              
+
+
             </div>
           </div>
 

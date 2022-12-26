@@ -59,8 +59,8 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 {/* <Image height="50" width="50" src={avatar} className="relative m-auto rounded-full" alt="any" objectFit="cover"></Image> */}
 
-                <span className="ml-3 block h-8 w-auto lg:hidden text-black">Austin Allen Portfolio</span>
-                <span className="ml-3 hidden h-8 w-auto lg:block text-black">Austin Allen Portfolio</span>
+                <span className="ml-9 block h-8 w-auto lg:hidden text-black">Austin Allen Portfolio</span>
+                <span className="ml-9 hidden h-8 w-auto lg:block text-black">Austin Allen Portfolio</span>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
                 <div className="flex flex-shrink-0 items-center">

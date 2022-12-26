@@ -359,14 +359,12 @@ export default function Home() {
       <div className="footer-container flex flex-col items-center">
 
 
-        <div id='contact' className="block mt-2">
+        <div id='contact' className="block mt-2 text-center">
           <span className="block">Reach out <a href="mailto:austinrallen96@gmail.com">via email</a>, LinkedIn or Github!</span>
           <ul className="list-inline inline-flex">
-            <li><a target="_blank" rel="noreferrer" href="https://github.com/otonomee"><i className="fa fa-github fa-fw bg-github-footer" aria-hidden="true"></i></a></li>
-
-            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/austin-allen-a7129b116/"><i className="fa fa-linkedin fa-fw bg-linkedin-footer" aria-hidden="true"></i></a></li>
-
             <li><a target="_blank" rel="noreferrer" href="mailto:austinrallen96@gmail.com"><i className="fa fa-envelope-o fa-fw bg-envelope" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/austin-allen-a7129b116/"><i className="fa fa-linkedin fa-fw bg-linkedin-footer" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/otonomee"><i className="fa fa-github fa-fw bg-github-footer" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>

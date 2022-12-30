@@ -42,7 +42,7 @@ export default function Home() {
           <div className='bg-gray-800 flex flex-col space-x-2 items-center'>
 
             {/* COFFEE SHOP SITE */}
-            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Harry & Sally&apos;s Coffee Co.</h3>
+            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Harry & Sally&apos;s Coffee Co. (ReactJS)</h3>
             <span className='text-yellow-50 text-sm font-extralight -mt-3 mb-4'>(click images to expand)</span>
             <div className="flex image-cards">
               <button className="left-img mb-10 rounded-md bg-yellow-50" data-bs-toggle="modal" data-bs-target="#coffeeshop1_modal">
@@ -74,7 +74,7 @@ export default function Home() {
 
             {/* AIRCRAFT AUDIO SITE */}
 
-            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Aircraft Audio Mastering</h3>
+            <h3 className='text-center px-10 text-3xl -mt-5 text-yellow-50 font-thin italic'>Aircraft Audio Mastering (PHP/Wordpress)</h3>
             <span className='text-white text-sm font-extralight -mt-3 mb-4'>(click images to expand)</span>
             <div className="flex flex-col image-cards place-items-start">
               <div className="flex flex-col flex-wrap justify-center items-start">
